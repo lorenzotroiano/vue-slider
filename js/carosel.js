@@ -16,8 +16,8 @@ createApp({
     data() {
     return {
 
-        activeImage: 0,
-        imagCarosello: [
+        activeItem: 0,
+        items: [
             {
                 image: 'img/01.webp',
                 title: "Marvel\\'s Spiderman Miles Morale",
@@ -50,6 +50,23 @@ createApp({
         ]
      
     }
+    },
+    methods: {
+        nextItem() {
+
+            this.activeItem++;
+            if(this.activeItem === this.items[length].image) {
+                this.activeItem = 0;
+            }
+
+        },
+
+        prevItem(){
+            this.activeItem--;
+            if(this.activeItem < 0){
+                this.activeItem = this.items[length].image
+            }
+        }
     }
 }).mount("#app")
 

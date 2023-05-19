@@ -122,3 +122,8 @@
 .active {
     display: block;
 }
+
+
+.colorthumb {
+    filter: grayscale(90%);
+}
