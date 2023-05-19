@@ -27,7 +27,7 @@
                   
                   
                     <div class="item active">
-                        <img src="img/04.webp" alt="img1">
+                        <img v-for="immagine in imagCarosello" :src="immagine.image[activeImage]" alt="img1">
                     </div>
                 
                     <!-- <div class="item">
@@ -54,13 +54,8 @@
 
                     <div class="thumb">
 
-                        <img src="img/01.webp" alt="">
-                        <img src="img/02.webp" alt="">
-                        <img src="img/03.webp" alt="">
-                        <img src="img/04.webp" alt="">
-                        <img src="img/05.webp" alt="">
-
-
+                        <img v-for="immagine in imagCarosello" :src="immagine.image[activeImage]" alt="img1">
+                    
                     </div>
                         
                     <div id="up">

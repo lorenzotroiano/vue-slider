@@ -16,7 +16,8 @@ createApp({
     data() {
     return {
 
-        imagCarosello = [
+        activeImage: 0,
+        imagCarosello: [
             {
                 image: 'img/01.webp',
                 title: "Marvel\\'s Spiderman Miles Morale",
